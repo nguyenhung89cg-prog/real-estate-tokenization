@@ -1,0 +1,25 @@
+{
+  "name": "celo-real-estate-tokenization",
+  "version": "1.0.0",
+  "description": "Decentralized Real Estate Tokenization Platform on Celo",
+  "main": "index.js",
+  "scripts": {
+    "compile": "hardhat compile",
+    "test": "hardhat test",
+    "deploy:testnet": "hardhat run scripts/deploy.js --network celoSepolia",
+    "deploy:mainnet": "hardhat run scripts/deploy.js --network celo",
+    "verify": "hardhat run scripts/verify.js --network celoSepolia",
+    "interact": "hardhat run scripts/interact.js --network celoSepolia"
+  },
+  "keywords": ["celo", "blockchain", "real-estate", "nft", "fractional-ownership", "defi"],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^4.0.0",
+    "hardhat": "^2.22.18"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^5.0.0",
+    "dotenv": "^16.3.1"
+  }
+}
